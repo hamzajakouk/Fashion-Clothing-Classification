@@ -23,3 +23,8 @@ During this project, we will walk through this plan.
 - 1.10 Data augmentation
 - 1.11 Training a larger model
 - 1.12 Using the model
+
+After successfully training and validating our model, we will package it into a Docker container using the provided Dockerfile. This container will include all the necessary dependencies, ensuring a consistent runtime environment. The trained model will be loaded and served by the lambda_function.py script, which will handle incoming requests and produce predictions.
+
+Once the Docker image is built, we will deploy it to AWS using an AWS Lambda function, leveraging the benefits of a serverless architecture for real-time inference. By utilizing AWS Lambda, our solution will be highly scalable and cost-efficient, as it will automatically allocate resources based on demand without the need for manual intervention.
+In addition to the Dockerfile and lambda_function.py, a test.py script is provided. This script demonstrates how to make API calls to the deployed Lambda function for testing and validation purposes. By using this script, you can quickly verify the correct functioning of the model in the deployed environment and ensure that it produces accurate predictions.
